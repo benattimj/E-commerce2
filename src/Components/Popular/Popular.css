@@ -1,0 +1,45 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+
+
+}
+
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+
+.popular hr{
+    width: 200px;
+    height: 3px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px
+}
+@media only screen and (max-width: 600px) {
+    .popular h1 {
+        font-size: 30px; /* Reduzindo o tamanho da fonte para telas menores */
+    }
+
+    .popular hr {
+        width: 150px; /* Reduzindo o tamanho da linha horizontal */
+    }
+
+    .popular-item {
+        flex-direction: column; /* Alterando a direção da coluna para dispositivos móveis */
+        align-items: center; /* Centralizando os itens na coluna */
+        gap: 20px; /* Reduzindo o espaço entre os itens */
+        margin-top: 20px; /* Reduzindo a margem superior */
+    }
+}

@@ -1,0 +1,60 @@
+.item {
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    /* Adiciona espaçamento entre os itens */
+}
+
+.item p {
+    margin: 6px 0;
+    /* Ajusta a margem superior e inferior dos parágrafos dentro do item */
+}
+
+.item img {
+    width: 100%;
+    /* Faz a imagem ocupar 100% da largura do item */
+    height: auto;
+    /* Mantém a proporção da imagem */
+
+}
+
+.item-prices {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os preços verticalmente */
+    gap: 5px;
+    /* Adiciona espaçamento entre os preços */
+}
+
+.item-price-new::before {
+    content: "R$";
+    /* Adiciona o símbolo de cifrão antes do texto */
+}
+
+.item-price-new,
+
+.item-price-old {
+    color: green;
+    font-size: 18px;
+    /* Aumenta o tamanho da fonte dos preços */
+    font-weight: 600;
+}
+
+.item-price-old::before {
+    content: "R$";
+    /* Adiciona o símbolo de cifrão antes do texto */
+}
+
+.item-price-old {
+    color: #bd0d0d;
+    text-decoration: line-through;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+    /* Corrige a propriedade 'transition' */
+}
+
